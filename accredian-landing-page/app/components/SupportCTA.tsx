@@ -4,7 +4,7 @@ export default function SupportCTA() {
   return (
     <section
       id="supportSection"
-      className="w-full flex justify-center mt-16 sm:mt-24 px-4"
+      className="w-full flex justify-center mt-16 sm:mt-12 px-4"
     >
       {/* Container */}
       <div className="w-full max-w-6xl">

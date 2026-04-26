@@ -91,7 +91,7 @@ export default function AccredianEdge() {
             return (
               <div
                 key={index}
-                className="w-[45%] sm:w-[30%] flex sm:flex-col items-center justify-center gap-2 bg-white border rounded-xl shadow-lg p-4 hover:scale-105 transition"
+                className="w-[45%] sm:w-[30%] flex sm:flex-col items-center justify-center gap-2 bg-white rounded-xl shadow-lg p-4 hover:scale-105 transition"
               >
                 <Icon className="text-blue-600 w-6 h-6 sm:w-14 sm:h-14" />
                 <h3 className="text-xs sm:text-lg font-semibold text-center">
@@ -127,7 +127,7 @@ export default function AccredianEdge() {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg border hover:shadow-xl transition"
+              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition"
             >
               <img
                 src={baseURL + course.img}

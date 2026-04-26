@@ -41,3 +41,83 @@ body {
   position: relative !important;
   margin-top: 20px;
 }
+
+/* =========================
+   GLOBAL LAYOUT SYSTEM
+========================= */
+
+.container-custom {
+  @apply max-w-[85rem] w-full mx-auto px-4 sm:px-6 xl:px-12;
+}
+
+.section {
+  @apply w-full flex justify-center mt-12 sm:mt-16;
+}
+
+.section-inner {
+  @apply max-w-[85rem] w-full mx-auto px-4 sm:px-6 xl:px-12;
+}
+
+/* =========================
+   TYPOGRAPHY SYSTEM
+========================= */
+
+.heading-primary {
+  @apply text-2xl sm:text-4xl font-bold text-gray-900 leading-tight;
+}
+
+.heading-secondary {
+  @apply text-xl sm:text-3xl font-semibold text-gray-900;
+}
+
+.subtext {
+  @apply text-sm sm:text-lg text-gray-700 mt-3;
+}
+
+.text-muted {
+  @apply text-gray-500;
+}
+
+/* =========================
+   BRAND COLORS
+========================= */
+
+.text-primary {
+  @apply text-blue-600;
+}
+
+.bg-primary {
+  @apply bg-blue-600;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+  @apply px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:shadow-lg transition;
+}
+
+/* =========================
+   CARD STYLE
+========================= */
+
+.card {
+  @apply bg-white border border-gray-200 rounded-xl shadow-lg;
+}
+
+/* =========================
+   FLEX HELPERS
+========================= */
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}

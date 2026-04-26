@@ -12,7 +12,7 @@ export default function CAT() {
       {/* 🔹 CAT Framework */}
       <section
         id="cat"
-        className="w-full mt-12 sm:mt-24 py-6 flex flex-col items-center"
+        className="w-full mt-12 sm:mt-16 py-6 flex flex-col items-center"
       >
         <div className="text-center">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
@@ -36,17 +36,6 @@ export default function CAT() {
         </div>
       </section>
 
-      {/* 🔹 How It Works */}
-      <section id="howItWorks" className="mt-12 sm:mt-24">
-        <div className="max-w-6xl mx-auto">
-
-          
-
-  
-          
-
-        </div>
-      </section>
     </>
   );
 }

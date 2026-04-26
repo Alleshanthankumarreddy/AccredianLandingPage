@@ -20,7 +20,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="howItWorks" className="mt-12 sm:mt-24">
+    <section id="howItWorks" className="mt-12 sm:mt-12">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}

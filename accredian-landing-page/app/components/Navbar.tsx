@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState("Home");
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white shadow-md py-6 px-6 md:px-14">
@@ -28,14 +29,23 @@ export default function Navbar() {
             "Testimonials",
           ].map((item, index) => (
             <li
-              key={index}
-              className={`text-[16px] cursor-pointer ${
-                index === 0
-                  ? "text-blue-600 font-semibold border-b-[3px] border-blue-600"
-                  : "text-black"
-              }`}
-            >
-              <a href={`#${item.replace(/\s/g, "")}`}>{item}</a>
+                key={index}
+                onClick={() => {
+                    setActive(item);
+                    setIsOpen(false); // close menu after click
+                }}
+                className="text-[16px] cursor-pointer"
+                >
+                <a
+                    href={`#${item.replace(/\s/g, "")}`}
+                    className={
+                    active === item
+                        ? "text-blue-600 font-semibold border-b-[2px] border-blue-600"
+                        : "text-black"
+                    }
+                >
+                    {item}
+                </a>
             </li>
           ))}
         </ul>

@@ -8,7 +8,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="mt-12 sm:mt-24 py-10 bg-[#1d1d1d] text-white">
+    <footer className="mt-12 sm:mt-12 py-10 bg-[#1d1d1d] text-white">
       <div className="w-full max-w-[85rem] mx-auto px-4">
 
         {/* Top Section */}
